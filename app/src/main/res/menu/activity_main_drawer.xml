@@ -14,9 +14,9 @@
     <item android:title="Communicate">
         <menu>
             <item
-                android:id="@+id/nav_2"
+                android:id="@+id/maintenance"
                 android:icon="@drawable/ic_launcher_background"
-                android:title="nav2" />
+                android:title="maintenance" />
             <item
                 android:id="@+id/nav_3"
                 android:icon="@drawable/ic_launcher_background"

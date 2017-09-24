@@ -142,7 +142,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         if (id == R.id.happn) {
             Intent intent = new Intent(MainActivity.this, HappnActivity.class);
             startActivity(intent);
-        } else if (id == R.id.nav_2) {
+        } else if (id == R.id.maintenance) {
 
         } else if (id == R.id.nav_3) {
 

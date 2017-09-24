@@ -11,6 +11,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import java.util.List;
+import java.util.Random;
 
 import br.fxd.com.fxd.R;
 import br.fxd.com.fxd.helper.DownloadImageTask;
@@ -71,7 +72,36 @@ public class UserCustomAdapter extends RecyclerView.Adapter<UserCustomAdapter.My
             }
         });
 
-        new DownloadImageTask(holder.person).execute("http://f.i.uol.com.br/folha/esporte/images/16225746.jpeg");
+
+        Random r = new Random();
+
+        int result = r.nextInt(6);
+
+        switch (result) {
+            case 0:
+                holder.person.setImageResource(R.drawable.rafael);
+                break;
+            case 1:
+                holder.person.setImageResource(R.drawable.caique);
+                break;
+            case 2:
+                holder.person.setImageResource(R.drawable.carolina);
+                break;
+            case 3:
+                holder.person.setImageResource(R.drawable.luiz);
+                break;
+            case 4:
+                holder.person.setImageResource(R.drawable.maicon);
+                break;
+            case 5:
+                holder.person.setImageResource(R.drawable.matheus);
+                break;
+            default:
+                holder.person.setImageResource(R.drawable.rafael);
+                break;
+        }
+
+//        new DownloadImageTask(holder.person).execute("http://f.i.uol.com.br/folha/esporte/images/16225746.jpeg");
     }
 
     @Override
