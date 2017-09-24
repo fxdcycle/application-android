@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">fxd</string>
+    <string name="title_activity_maps">fxd</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action">Diga o que deseja...</string>
+    <string name="sorry">Desculpe, não entendi.</string>
+    <string name="speech">Use a Google API para solicitar algo.</string>
+
+    <string name="maps">MAPS</string>
+    <string name="happn">HAPPN</string>
+</resources>
