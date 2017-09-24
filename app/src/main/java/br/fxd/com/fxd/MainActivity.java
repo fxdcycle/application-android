@@ -3,11 +3,13 @@ package br.fxd.com.fxd;
 import android.Manifest;
 import android.app.AlertDialog;
 import android.content.ActivityNotFoundException;
+import android.content.ComponentName;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Color;
 import android.graphics.Typeface;
+import android.net.Uri;
 import android.speech.RecognizerIntent;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.TabLayout;
@@ -143,8 +145,13 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             Intent intent = new Intent(MainActivity.this, HappnActivity.class);
             startActivity(intent);
         } else if (id == R.id.maintenance) {
+            Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(""));
+            startActivity(intent);
 
-        } else if (id == R.id.nav_3) {
+//            c
+        } else if (id == R.id.ewallet) {
+            Intent intent = new Intent(MainActivity.this, EWalletActivity.class);
+            startActivity(intent);
 
         }
 
@@ -281,7 +288,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                         if(occurrence.getType().matches(".*BURACO.*")){
                             mMap.addMarker(new MarkerOptions().position(latLng).title(String.valueOf(occurrence.getId())).icon(BitmapDescriptorFactory.fromBitmap(resizeMapIcons("hole",90,120))));
                         } else if(occurrence.getType().matches(".*SINALIZA.*")){
-                            mMap.addMarker(new MarkerOptions().position(latLng).title(String.valueOf(occurrence.getId())).icon(BitmapDescriptorFactory.fromBitmap(resizeMapIcons("signaling",90,120))));
+                            mMap.addMarker(new MarkerOptions().position(latLng).title(String.valueOf(occurrence.getId())).icon(BitmapDescriptorFactory.fromBitmap(resizeMapIcons("warning",90,120))));
                         }
                         mMap.moveCamera(CameraUpdateFactory.newLatLng(latLng));
 

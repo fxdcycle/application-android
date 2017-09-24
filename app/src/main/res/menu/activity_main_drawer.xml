@@ -6,21 +6,21 @@
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/happn"
-            android:icon="@drawable/ic_launcher_background"
+            android:icon="@drawable/happn"
             android:title="HAPPN" />
 
     </group>
 
-    <item android:title="Communicate">
+    <item android:title="Features">
         <menu>
             <item
                 android:id="@+id/maintenance"
-                android:icon="@drawable/ic_launcher_background"
-                android:title="maintenance" />
+                android:icon="@drawable/wrench"
+                android:title="MAINTENANCE" />
             <item
-                android:id="@+id/nav_3"
-                android:icon="@drawable/ic_launcher_background"
-                android:title="nav3" />
+                android:id="@+id/ewallet"
+                android:icon="@drawable/wallet"
+                android:title="EWALLET" />
         </menu>
     </item>
 
